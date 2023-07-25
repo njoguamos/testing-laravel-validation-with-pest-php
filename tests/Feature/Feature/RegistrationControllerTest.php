@@ -16,7 +16,7 @@ function getATakenEmail(): string
 }
 
 dataset(name: 'validation-rules', dataset: [
-    ['name', '', fn() => __(key: 'validation.custom.name.required')],
+    'name is required' => ['name', '', fn() => __(key: 'validation.custom.name.required')],
     'name be a string' => ['name', ['array'], fn() => __(key: 'validation.custom.name.string')],
     'name not too short' => ['name', 'ams', fn() => __(key: 'validation.custom.name.min')],
     'name not too long' => ['name', getLongName(), fn() => __(key: 'validation.custom.name.max')],
