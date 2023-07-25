@@ -7,7 +7,7 @@ git clone git@github.com:njoguamos/testing-laravel-validation-with-pest-php.git
 
 #### Install composer dependencies
 ```bash
-Composer install
+composer install
 ```
 
 #### Run tests
